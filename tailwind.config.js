@@ -1,10 +1,16 @@
 module.exports = {
   content: [
-    './site/templates/**/*.{twig,php}',
-    './site/snippets/**/*.{twig,php}',
+    // set the path to scann/watch files https://tailwindcss.com/docs/content-configuration
+    "./site/templates/**/*.{twig,php}",
+    "./site/snippets/**/*.{twig,php}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      // extend existing styles by custom styles
+      colors: {
+        customColor: "#90d16d",
+      },
+    },
   },
   plugins: [],
-}
+};
