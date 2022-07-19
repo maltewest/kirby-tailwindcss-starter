@@ -8,6 +8,7 @@ export default () => ({
     strictPort: true,
     // Set host to true if you use a non-localhost php server, like laravel valet
     // host: true
+    port: 3000
   },
   build: {
     outDir: resolve(process.cwd(), 'public/dist'), // production output directory
